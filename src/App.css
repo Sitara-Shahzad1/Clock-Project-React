@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #8a5cb5, #fcfbfc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.heading h1{
+  
+    display: inline-block; /* Important for gradient text to work */
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.heading p{
+  font-size: 23px;
+  font-weight: 600;
+  
+}
+.time {
+  width: 90%;
+  max-width: 360px;
+  margin: 30px auto;
+  padding: 25px 20px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1),
+              inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  cursor: default;
+  backdrop-filter: blur(4px);
+}
+
+.time p {
+  display: inline-block; /* Important for gradient text to work */
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.time:hover {
+  transform: scale(1.15);
+  background: linear-gradient(to bottom right, #7d08f1, #4180ec);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.time:hover p {
+  background: none;
+  color: white;
+  -webkit-text-fill-color: white;
+}
